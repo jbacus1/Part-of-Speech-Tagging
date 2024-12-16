@@ -21,23 +21,6 @@ This project is a Part-of-Speech (POS) tagger that assigns grammatical tags (e.g
 
 ---
 
-## System Components
-
-### Viterbi Class
-- **train():** Reads training data to compute transition and emission probabilities.
-- **decodePOS():** Implements the Viterbi algorithm to tag words in a sentence.
-
-### ConsoleViterbi
-- Allows users to input sentences directly in the console.
-- Outputs predicted POS tags in real-time.
-
-### FileViterbi
-- Processes sentences from a test file.
-- Compares predicted tags with ground truth labels to calculate accuracy.
-- Outputs evaluation metrics, including the number of correct and total tags.
-
----
-
 ## How It Works
 
 1. **Training:**
@@ -46,15 +29,11 @@ This project is a Part-of-Speech (POS) tagger that assigns grammatical tags (e.g
 
 2. **Console Tagging:**
    - Enter a sentence directly via the console.
-   - View the POS tags for the sentence in real-time.
+   - View the POS tags for the sentence.
 
 3. **File Evaluation:**
    - Input: Test sentences (e.g., `brown-test-sentences.txt`) and reference tags (e.g., `brown-test-tags.txt`).
-   - Output: Accuracy metrics and detailed comparison of predicted vs. actual tags.
-
----
-
-## Enjoy!
+   - Output: Accuracy for predicted vs. actual tags.
 
 ---
 
